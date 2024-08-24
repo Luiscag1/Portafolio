@@ -1,0 +1,136 @@
+:root {
+  --color-oscuro-1: #1c1c22;
+  --color-oscuro-2: #380a06;
+  --color-blanco-3: #ffffff;
+  --color-oscuro-4: #082032;
+  --color-oscuro-5: #000000;
+}
+
+/* Establece un fondo degradado */
+body {
+  background: linear-gradient(
+    270deg,
+    #1a1a40,
+    #0d9b75,
+    #a71c1cfb,
+    #082032,
+    #000000
+  );
+  background-size: 800% 800%;
+  animation: AnimationName 25s ease infinite;
+}
+
+/* Crea la animación para el movimiento del fondo */
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.navbar {
+  overflow: hidden;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: var(--color-blanco-3);
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-family: "Courier New", Courier, monospace;
+  font-style: italic;
+  font-weight: 1000;
+}
+
+.navbar a:hover {
+  background-color: var(--color-blanco-3);
+  border-radius: 5px;
+  color: var(--color-oscuro-5);
+  transform: scale(1.2);
+  border-color: var(--color-oscuro-5);
+  padding: 14px 20px;
+}
+
+.titulo,
+.text-center {
+  color: var(--color-blanco-3);
+  text-align: center;
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.imagenLogo {
+  width: 50px;
+}
+
+.descripcion {
+  color: var(--color-blanco-3);
+  text-align: start;
+}
+
+.Formulario {
+  color: var(--color-oscuro-5);
+  text-align: center;
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tex-img {
+  color: var(--color-blanco-3);
+  display: grid;
+  grid-template-columns: auto 1fr; /* Define dos columnas: una para la imagen y otra para el texto */
+  align-items: center; /* Alinea verticalmente el texto con la imagen */
+}
+
+.imagenProyecto{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh
+  
+
+}
+
+#habilidades {
+  padding: 2rem 0;
+}
+
+.skill-card {
+  border: 1px solid var(--color-blanco-3);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 8px var(--color-oscuro-1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px var(--color-blanco-3);
+}
+
+.skill-card {
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+
+
+.final {
+  padding-top: 100px;
+  color: var(--color-blanco-3);
+  text-align: center;
+}
+
+
